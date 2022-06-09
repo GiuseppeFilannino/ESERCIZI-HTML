@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>esercizio 7- Form avanzato</title>
+    <style>
+        label {
+            display: block
+        }
+    </style>
+</head>
+
+<body>
+    <form action="demo.php" method="post">
+    <fieldset>
+        <legend>Dati anagrafici</legend>
+        <label for="nome">
+            <span>Nome</span>
+            <input type="text" name="nome" id="nome" placeholder="Inserire nome " autofocus>
+        </label>
+        <label for="cognome">
+            <span>Cognome</span>
+            <input type="text" name="cognome" id="cognome" placeholder="Inserire cognome ">
+        </label>
+        <label for="data">
+            <span>Data di nascita</span>
+            <input type="date" name="data" id="date"  >
+        </label>
+        <label for=" indirizzo">
+            <span>Indirizzo</span>
+            <input type="text" name="indirizzo" id="indirizzo" placeholder="Inserire indirizzo">
+        </label>
+        <label for="email">
+            <span>Inserire E-Mail</span>
+            <input type="email" name="email" id="email" placeholder="Inserire E-Mail">
+        </label>
+        <label for="password">
+            <span>Password</span>
+            <input type="password" name="password" id="password" placeholder="Inserire password">
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Piano di abbonamento</legend>
+        <h4>Seleziona un piano di abbonamento</h4>
+      
+<select name="abbonamento">
+    <option value="">Seleziona</option>
+    <option value="Gratuito">Gratuito</option>
+    <option value="1mese">1 mese(20€)</option>
+    <option value="3 mesi">3 mesi(50€)</option>
+    <option value="6mesi">6 mesi(50€)</option>
+</select>
+        <label for="pro">
+            <span>Aggiungi vantaggi PRO</span>
+            <input type="checkbox" id="pro" name="pro">
+    </fieldset>
+    <fieldset>
+        <legend>Pagamento</legend>
+
+        <label for="nomecarta">
+            <span>Nome e Cognome titolare</span>
+            <input type="text" id="nomecarta" name="nomecarta" required>
+            <label for="cvc">
+                <span>CVC</span>
+                <input  type="text"  id="cvc" name="cvc" maxlength="4" pattern="[0-9]{3,4}"  required>
+                <label for="scadenza">
+                    <span>Scadenza</span>
+                    <input type="month" id="scadenza" name="scadenza">
+                    <label for="fattura">
+                        <span>Indirizzo di fatturazione</span>
+                        <input type="text" id="fattura" name="fattura" placeholder="Inserire indirizzo">
+    </fieldset>
+    <input type="submit" value="invio">
+    <input type="reset" value="reset">
+
+</body>
+
+
+
+</html>
+
